@@ -1,5 +1,6 @@
 const app = function(){
   new PieChart();
+  new ColumnChart();
 }
 
 
