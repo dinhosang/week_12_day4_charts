@@ -1,3 +1,3 @@
 const PieChart = function(pieDetails){
-  const chart     = new Highcharts.Chart(pieDetails)
+  new Highcharts.Chart(pieDetails)
 }

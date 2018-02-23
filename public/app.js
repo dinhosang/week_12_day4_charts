@@ -24,8 +24,11 @@ makeRequest = function(url){
 convertJSONToCountries = function(){
   if(this.status !== 200) return;
   const countries = JSON.parse(this.responseText);
-  new SunBurstChart(countries);
 
+  const sunBurstContainer = document.getElementById('countries-chart')
+  const details = new CountriesDetails(countries, sunBurstContainer);
+
+  new SunBurstChart(details)
 }
 
 document.addEventListener('DOMContentLoaded', app);
