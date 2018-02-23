@@ -59,7 +59,7 @@ const SunBurstChart = function(countriesDetails){
                   }
 
 
-  // Highcharts.getOptions().colors.splice(0, 0, 'transparent');
+  Highcharts.getOptions().colors.splice(0, 0, 'transparent');
   new Highcharts.Chart(this.details)
 }
 
